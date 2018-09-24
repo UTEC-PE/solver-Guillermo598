@@ -85,6 +85,12 @@
 		<Unit filename="D:/Documents/GitHub/solver-Guillermo598/main.cpp">
 			<Option target="solver-Guillermo598"/>
 		</Unit>
+		<Unit filename="D:/Documents/GitHub/solver-Guillermo598/node.h">
+			<Option target="solver-Guillermo598"/>
+		</Unit>
+		<Unit filename="D:/Documents/GitHub/solver-Guillermo598/solver.h">
+			<Option target="solver-Guillermo598"/>
+		</Unit>
 		<Unit filename="D:/Documents/GitHub/solver-Guillermo598/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

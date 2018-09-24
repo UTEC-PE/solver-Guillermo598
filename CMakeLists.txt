@@ -3,4 +3,4 @@ project(solver-Guillermo598)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(solver-Guillermo598 main.cpp)
+add_executable(solver-Guillermo598 main.cpp solver.h node.h)
