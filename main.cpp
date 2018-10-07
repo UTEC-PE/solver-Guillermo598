@@ -20,10 +20,24 @@ void menu() {
 
 }
 
+/**
+ * Falta implementar el operate para poder dar resultados
+ */
 int main(int argc, char const *argv[]) {
-    menu();
+    string equation;
+    if (argc == 2) {
+        equation = argv[1];
+        Solver<string>* solver = new Solver<string>();
+        int pos = 0;
+        cout << solver -> search('+', pos, equation) << endl;
+    }
+    else {
+      throw "One argument expected";
+    }
 
-    cout << "\nPress enter to continue ...";
+    /*menu();
+
+    cout << "\nPress enter to continue ...";*/
     //cin.get();
     return EXIT_SUCCESS;
 }

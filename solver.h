@@ -39,7 +39,7 @@ public:
 
     void build(string str) {
         int pos = 0;
-        Node<T>* temp = new Node(str);
+        Node<T>* temp = new Node<T>(str);
         if (!root) {
             root = temp;
             current = &root;
@@ -47,8 +47,8 @@ public:
         if (search('+', pos, str)) {
             temp -> data = '+';
             string str2 = str;
-            Node<T>* left = new Node(str.substr(0, pos));
-            Node<T>* right = new Node(str2.substr(pos+1, (str2.size()-1)-pos));
+            Node<T>* left = new Node<T>(str.substr(0, pos));
+            Node<T>* right = new Node<T>(str2.substr(pos+1, (str2.size()-1)-pos));
 
             temp -> left = left;
             temp -> right = right;
@@ -62,8 +62,8 @@ public:
         if (search('-', pos, str)) {
             temp -> data = '-';
             string str2 = str;
-            Node<T>* left = new Node(str.substr(0, pos));
-            Node<T>* right = new Node(str2.substr(pos+1, (str2.size()-1)-pos));
+            Node<T>* left = new Node<T>(str.substr(0, pos));
+            Node<T>* right = new Node<T>(str2.substr(pos+1, (str2.size()-1)-pos));
 
             temp -> left = left;
             temp -> right = right;
